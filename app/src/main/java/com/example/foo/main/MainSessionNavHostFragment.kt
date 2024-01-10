@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import dev.hotwire.turbo.config.TurboPathConfiguration
 import dev.hotwire.turbo.session.TurboSessionNavHostFragment
 import com.example.foo.features.web.WebFragment
+import com.example.foo.features.web.WebHomeFragment
 import com.example.foo.util.HOME_URL
 import kotlin.reflect.KClass
 
@@ -14,7 +15,8 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment() {
  
   override val registeredFragments: List<KClass<out Fragment>>
     get() = listOf(
-      WebFragment::class
+      WebFragment::class,
+      WebHomeFragment::class
     )
 
   override val registeredActivities: List<KClass<out AppCompatActivity>>

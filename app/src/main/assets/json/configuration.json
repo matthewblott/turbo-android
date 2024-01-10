@@ -9,9 +9,18 @@
       ],
       "properties": {
         "context": "default",
-        "presentation": "push",
         "uri": "turbo://fragment/web",
         "pull_to_refresh_enabled": true
+      }
+    },
+    {
+      "patterns": [
+        "^$",
+        "^/$"
+      ],
+      "properties": {
+        "uri": "turbo://fragment/web/home",
+        "presentation": "replace_root"
       }
     }
   ]
